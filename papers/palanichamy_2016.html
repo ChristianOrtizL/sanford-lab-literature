@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palanichamy 2016 — IGF2BP3 in MLL-AF4 B-ALL</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="nav"><a href="../index.html">← all papers</a></div>
+
+<h1>IGF2BP3 targeting of oncogenic transcripts promotes hematopoietic progenitor proliferation</h1>
+<p class="subtitle">Palanichamy JK, Tran TM, Howard JM, et al. <em>Journal of Clinical Investigation</em>. 2016;126(4):1495-1511. <a href="https://doi.org/10.1172/JCI80046">doi:10.1172/JCI80046</a></p>
+
+<h2>Big picture</h2>
+<p>This is the foundational Sanford and Rao lab paper that put IGF2BP3 on the map as an oncogenic RNA-binding protein in B-cell acute lymphoblastic leukemia. The central claim: IGF2BP3 is a posttranscriptional amplifier of leukemogenic gene expression in MLL-rearranged B-ALL. Every subsequent IGF2BP3 paper from this axis (Tran 2022, Sharma 2025, the I3IN-002 inhibitor work) descends from this one.</p>
+
+<h2>Pathway and evidence map</h2>
+
+<div class="legend">
+  <span class="legend-item"><span class="swatch" style="background:#534AB7"></span>Driver / regulator</span>
+  <span class="legend-item"><span class="swatch" style="background:#0F6E56"></span>Output / phenotype</span>
+  <span class="legend-item"><span class="swatch" style="background:#993C1D"></span>Target gene</span>
+  <span class="legend-item"><span class="swatch" style="background:#5F5E5A"></span>Experimental tool</span>
+  <span class="legend-item"><span class="arrow-sample"></span>activates / leads to</span>
+  <span class="legend-item"><span class="arrow-dashed"></span>experimental perturbation</span>
+</div>
+
+<div class="diagram">
+<svg viewBox="0 0 680 720" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Palanichamy 2016 pathway and evidence map</title>
+<desc id="diagram-desc">MLL-AF4 transcriptionally drives IGF2BP3, which posttranscriptionally amplifies oncogenic targets MYC and CDK6 through 3 prime UTR binding, leading to a pre-leukemic phenotype in mouse bone marrow.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g class="c-purple">
+<rect x="240" y="30" width="200" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="52" text-anchor="middle" dominant-baseline="central">MLL-AF4 fusion</text>
+<text class="ts" x="340" y="72" text-anchor="middle" dominant-baseline="central">Transcription elongation driver</text>
+</g>
+
+<line x1="340" y1="86" x2="340" y2="130" class="arr" marker-end="url(#arrow)"/>
+<text class="ts standalone-label" x="350" y="110" text-anchor="start">recruits SEC, DOT1L</text>
+
+<g class="c-purple">
+<rect x="240" y="130" width="200" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="152" text-anchor="middle" dominant-baseline="central">IGF2BP3</text>
+<text class="ts" x="340" y="172" text-anchor="middle" dominant-baseline="central">RBP, KH and RRM domains</text>
+</g>
+
+<line x1="240" y1="158" x2="170" y2="158" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+<g class="c-gray">
+<rect x="20" y="130" width="150" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="95" y="152" text-anchor="middle" dominant-baseline="central">I-BET151, EPZ5676</text>
+<text class="ts" x="95" y="172" text-anchor="middle" dominant-baseline="central">Block transcription</text>
+</g>
+<text class="ts standalone-label" x="205" y="148" text-anchor="middle">inhibit</text>
+
+<line x1="440" y1="158" x2="510" y2="158" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+<g class="c-gray">
+<rect x="510" y="130" width="150" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="585" y="152" text-anchor="middle" dominant-baseline="central">shRNA, CRISPR KO</text>
+<text class="ts" x="585" y="172" text-anchor="middle" dominant-baseline="central">Loss of function</text>
+</g>
+<text class="ts standalone-label" x="475" y="148" text-anchor="middle">deplete</text>
+
+<line x1="290" y1="186" x2="200" y2="240" class="arr" marker-end="url(#arrow)"/>
+<line x1="390" y1="186" x2="480" y2="240" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-coral">
+<rect x="120" y="240" width="160" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="200" y="262" text-anchor="middle" dominant-baseline="central">MYC mRNA</text>
+<text class="ts" x="200" y="282" text-anchor="middle" dominant-baseline="central">3 prime UTR binding</text>
+</g>
+
+<g class="c-coral">
+<rect x="400" y="240" width="160" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="480" y="262" text-anchor="middle" dominant-baseline="central">CDK6 mRNA</text>
+<text class="ts" x="480" y="282" text-anchor="middle" dominant-baseline="central">3 prime UTR binding</text>
+</g>
+
+<line x1="200" y1="296" x2="200" y2="340" class="arr" marker-end="url(#arrow)"/>
+<line x1="480" y1="296" x2="480" y2="340" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-coral">
+<rect x="120" y="340" width="160" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="200" y="362" text-anchor="middle" dominant-baseline="central">MYC protein up</text>
+<text class="ts" x="200" y="382" text-anchor="middle" dominant-baseline="central">Cell cycle, ribosome biogenesis</text>
+</g>
+
+<g class="c-coral">
+<rect x="400" y="340" width="160" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="480" y="362" text-anchor="middle" dominant-baseline="central">CDK6 protein up</text>
+<text class="ts" x="480" y="382" text-anchor="middle" dominant-baseline="central">G1 to S progression</text>
+</g>
+
+<line x1="200" y1="396" x2="320" y2="450" class="arr" marker-end="url(#arrow)"/>
+<line x1="480" y1="396" x2="360" y2="450" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-teal">
+<rect x="180" y="450" width="320" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="472" text-anchor="middle" dominant-baseline="central">Pre-leukemic phenotype</text>
+<text class="ts" x="340" y="492" text-anchor="middle" dominant-baseline="central">HSC, LMPP, CLP expansion; Ki67 up</text>
+</g>
+
+<line x1="340" y1="506" x2="340" y2="550" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-teal">
+<rect x="180" y="550" width="320" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="572" text-anchor="middle" dominant-baseline="central">Lineage skew, repop advantage</text>
+<text class="ts" x="340" y="592" text-anchor="middle" dominant-baseline="central">B and myeloid up; T, RBC, platelets down</text>
+</g>
+
+<g class="c-gray">
+<rect x="20" y="450" width="140" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="90" y="472" text-anchor="middle" dominant-baseline="central">iCLIP-seq</text>
+<text class="ts" x="90" y="492" text-anchor="middle" dominant-baseline="central">Maps binding sites</text>
+</g>
+<line x1="160" y1="478" x2="180" y2="478" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+
+<g class="c-gray">
+<rect x="520" y="450" width="140" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="590" y="472" text-anchor="middle" dominant-baseline="central">Luciferase</text>
+<text class="ts" x="590" y="492" text-anchor="middle" dominant-baseline="central">3 prime UTR reporter</text>
+</g>
+<line x1="520" y1="478" x2="500" y2="478" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+
+<g class="c-gray">
+<rect x="20" y="550" width="140" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="90" y="572" text-anchor="middle" dominant-baseline="central">BMT in mice</text>
+<text class="ts" x="90" y="592" text-anchor="middle" dominant-baseline="central">Retroviral overexpression</text>
+</g>
+<line x1="160" y1="578" x2="180" y2="578" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+
+<g class="c-gray">
+<rect x="520" y="550" width="140" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="590" y="572" text-anchor="middle" dominant-baseline="central">FACS, Ki67</text>
+<text class="ts" x="590" y="592" text-anchor="middle" dominant-baseline="central">Progenitor counts</text>
+</g>
+<line x1="520" y1="578" x2="500" y2="578" class="arr" marker-end="url(#arrow)" stroke-dasharray="5 4"/>
+
+<g class="c-amber">
+<rect x="180" y="640" width="320" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="662" text-anchor="middle" dominant-baseline="central">RBD deletion abolishes phenotype</text>
+<text class="ts" x="340" y="682" text-anchor="middle" dominant-baseline="central">KH-only or RRM-only mutants</text>
+</g>
+
+<line x1="270" y1="640" x2="290" y2="606" class="arr" stroke-dasharray="5 4"/>
+<text class="ts standalone-label" x="200" y="630" text-anchor="start">RNA-binding required</text>
+</svg>
+</div>
+
+<h2>Gaps in the field before this paper</h2>
+<p>MLL-rearranged B-ALL was understood almost entirely as a transcriptional and epigenetic disease. Posttranscriptional contributions were poorly explored. For RNA-binding proteins in hematologic malignancy, Musashi-2 had been implicated in AML and HuR in epithelial cancers, but a functional RBP driver in B-ALL was not established. IGF2BP3 itself was known from epithelial cancers where overexpression correlated with poor prognosis, but its targets were a short list and there was no transcriptome-wide binding map. Whether IGF2BP3 was a passenger or a driver in leukemia was unknown.</p>
+
+<h2>Key findings</h2>
+<ol>
+  <li>IGF2BP3 is specifically overexpressed in MLL-rearranged B-ALL versus other B-ALL subtypes and normal B cells. Confirmed in 134 patient samples.</li>
+  <li>IGF2BP3 sits downstream of MLL-fusion transcriptional activity. The BET inhibitor I-BET151 reduces IGF2BP3 mRNA alongside MYC and CDK6.</li>
+  <li>IGF2BP3 knockdown or CRISPR-Cas9 deletion in RS4;11 (MLL-AF4) and NALM6 B-ALL cell lines causes apoptosis and growth arrest.</li>
+  <li>Enforced IGF2BP3 expression in murine bone marrow produces a striking pre-leukemic phenotype: expanded HSCs, LMPPs, CLPs; increased Ki67 in progenitors; competitive repopulation advantage; lineage skewing toward B-cell and myeloid output.</li>
+  <li>iCLIP in REH and RS4;11 identifies direct IGF2BP3-RNA interaction sites enriched in 3'UTRs near stop codons, with GCAC tetramer enrichment, overlapping miRNA target sites within a 25 bp window.</li>
+  <li>MYC and CDK6 are direct, high-confidence IGF2BP3 targets. Luciferase reporter assays show IGF2BP3-dependent increase in reporter activity through their 3'UTRs.</li>
+  <li>RNA-binding domain deletion (KH-only or RRM-only) abolishes both the in vivo hematopoietic phenotype and the 3'UTR reporter enhancement, confirming RNA-binding is required for function.</li>
+</ol>
+
+<h2>Experimental approach (concise)</h2>
+<p>Patient sample microarray and qPCR. I-BET151 small-molecule treatment to perturb MLL-fusion activity. Lentiviral shRNA and CRISPR-Cas9 knockout in B-ALL cell lines. Retroviral MSCV-IRES-GFP overexpression in murine bone marrow with transplantation and competitive repopulation. iCLIP-seq in two B-ALL cell lines. RNA-seq in RS4;11 with IGF2BP3 knockdown. Dual-luciferase reporters with segmented 3'UTRs and binding-site mutants. RNA-binding domain deletion mutants.</p>
+
+<h2>Granular details worth remembering</h2>
+<ul>
+  <li>The GCAC motif is the canonical IGF2BP-family binding signature. Strongest enrichment in last exons; peak density maximal just 3' of stop codons.</li>
+  <li>The 25 bp overlap with miRNA target sites supports the cytoplasmic safe house model: IGF2BP proteins sterically block miRNA-mediated decay.</li>
+  <li>216 genes intersect between iCLIP targets and knockdown-sensitive transcripts. 157 go down with IGF2BP3 loss vs 59 that go up. Dominant directionality is positive regulation of targets.</li>
+  <li>The in vivo model is NOT a leukemia model. Enforced expression alone produces pre-leukemic expansion. Full leukemogenesis requires collaborating oncogenic events. Tran 2022 addresses this.</li>
+  <li>Single 3'UTR binding-site deletions mostly failed to eliminate IGF2BP3-dependent enhancement. Cooperative, multi-site recognition is the implication.</li>
+  <li>HOXA9 and MEIS1 are noted as overexpressed in MLL-rearranged samples but not validated as direct IGF2BP3 targets here. Tran 2022 follows up.</li>
+</ul>
+
+<div class="callout">
+<strong>Honesty check on the diagram:</strong> the arrow from MYC/CDK6 protein up to the BM phenotype is correlative, not formally causal in this paper. The authors tried to rescue IGF2BP3 knockdown with MYC re-expression and failed (mentioned as data not shown). This is a real limitation that Tran 2022 partially addresses by going deeper on Hoxa9 and Ras pathway targets.
+</div>
+
+<h2>Implied next steps</h2>
+<ol>
+  <li>Is IGF2BP3 required for leukemogenesis in vivo, not just sufficient to perturb hematopoiesis? <strong>Tran 2022 addresses this.</strong></li>
+  <li>How is IGF2BP3 itself induced by MLL-AF4? Direct transcriptional target? <strong>Tran 2022, ChIP-PCR shows MLL-AF4 binds IGF2BP3 intron 1.</strong></li>
+  <li>Does IGF2BP3 regulate alternative splicing in addition to mRNA stability? <strong>Tran 2022, eCLIP plus MISO analysis.</strong></li>
+  <li>Is IGF2BP3 druggable? <strong>I3IN-002 development, Jaiswal 2025 bioRxiv, used in Sharma 2025.</strong></li>
+  <li>Does the m6A reader function explain IGF2BP3 targeting rules? <strong>Sharma 2025, Li 2025, Nicastro 2023.</strong></li>
+</ol>
+
+<h2>How direct RNA sequencing extends this work</h2>
+<p>iCLIP maps where IGF2BP3 binds. It does not tell you what the mRNA looks like once bound. Direct RNA sequencing on the Oxford Nanopore PromethION (DRS) would extend this paper in several testable ways.</p>
+<ul>
+  <li><strong>PolyA tail length.</strong> If IGF2BP3 stabilizes MYC and CDK6 mRNAs, those transcripts in IGF2BP3-high cells should have longer tails than in IGF2BP3-depleted cells. DRS measures tail length natively on every read.</li>
+  <li><strong>Isoform-level resolution of 3'UTR binding.</strong> Many transcripts have multiple 3'UTR isoforms from alternative polyadenylation. Short-read RNA-seq conflates these. DRS reads full transcripts from 5' to 3', so you can ask which APA isoform is stabilized.</li>
+  <li><strong>m6A.</strong> This paper predates IGF2BP3 being identified as an m6A reader. DRS with Dorado m6A calling could ask whether iCLIP-defined binding sites are methylated, without antibody pulldowns.</li>
+  <li><strong>MYC and CDK6 specifically.</strong> DRS of endogenous transcripts in IGF2BP3-WT vs KO cells could distinguish stabilization (more reads, normal length) from altered processing (different isoform ratios) from translation effects (polyA length as proxy).</li>
+</ul>
+
+<div class="footer">
+Reference: Palanichamy JK, Tran TM, Howard JM, Contreras JR, Fernando TR, Sterne-Weiler T, Katzman S, Toloue M, Yan W, Basso G, Pigazzi M, Sanford JR, Rao DS. RNA-binding protein IGF2BP3 targeting of oncogenic transcripts promotes hematopoietic progenitor proliferation. <em>J Clin Invest</em>. 2016;126(4):1495-1511.
+</div>
+
+</body>
+</html>
